@@ -1,6 +1,5 @@
 import React from "react";
 import Styles from "./Projects.module.css";
-// import useScrollReveal from "../../hooks/useScrollReveal";
 import Reveal from "../../hooks/Reveal";
 import bidnbizImage from "../../assets/images/bidnbiz.png";
 import potfolioImage from "../../assets/images/portfolio.png";
