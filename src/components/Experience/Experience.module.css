@@ -1,0 +1,99 @@
+.experience_section {
+  padding-top: 8rem;
+  margin-bottom: 12rem;
+  margin-bottom: 2rem;
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-right);
+    z-index: -1;
+
+}
+
+.experience_section .experience_company::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--golden-color);
+  vertical-align: baseline;
+  margin-right: 2rem;
+  transform: translate(-45%, -45%);
+  position: relative;
+  z-index: -1;
+}
+.experience_company {
+  font-size: 1.2rem;
+  color: var(--title-text-color);
+  font-weight: 300 !important;
+  text-transform: capitalize;
+  margin-bottom: 0.6rem;
+  margin-left: 3rem;
+  text-wrap: wrap;
+}
+.experience_section .role {
+  font-size: 1.1rem;
+  color: var(--title-text-color);
+  font-weight: 300 !important;
+  text-transform: capitalize;
+  margin-bottom: 0.6rem;
+  margin-left: 3rem;
+}
+.experience_company {
+  margin-left: 0;
+}
+.experience_section h4 {
+  font-size: 1rem;
+  color: var(--para-text-color);
+  font-weight: 100;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-left: 3rem;
+}
+.responsibilities {
+  margin-left: 3rem;
+  color: var(--para-text-color);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.responsibilities li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+  z-index: -1 !important;
+}
+.responsibilities li::before {
+  content: "•";
+  color: var(--golden-color);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
+
+.experience_section div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.individual_experience {
+  border-left: 1px solid var(--color-border);
+}
+
+@media (max-width: 767px) {
+  .experience_section {
+    width:80vw;
+    margin-left: 1rem;
+    margin-right: 1rem;;
+  }
+  .experience_section div {
+  place-items: center !important; 
+    align-items: center !important;
+
+ }
+}
+

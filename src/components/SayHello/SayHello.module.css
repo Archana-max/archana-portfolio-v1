@@ -1,0 +1,38 @@
+.say_hello_section {
+  margin-top: 12rem;
+  margin-bottom: 2rem;
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-right);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.say_hello_section p {
+  margin-bottom: 0rem;
+    text-align: center;
+
+}
+
+.get_in_touch {
+  display: block;
+  font-size: 3rem;
+  color: var(--title-text-color);
+  letter-spacing: 4.75px;
+  margin-bottom: 8rem;
+}
+.say_hello a {
+  color: var(--golden-color);
+}
+
+.divider {
+  width: 80vw;
+  margin: 8rem 0rem 2rem 0rem;
+  border: 0.7px solid var(--color-border);
+}
+.copyright {
+  font-size: 0.8rem;
+  color: var(--para-text-color);
+  font-weight: 300;
+  font-family: var(--font-mono);
+}

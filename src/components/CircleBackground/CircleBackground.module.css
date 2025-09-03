@@ -1,0 +1,101 @@
+.circle_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.circle_1 {
+  width: 10%;
+  height: 10%;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  bottom: 0;
+  right: -4%;
+  top: 40%;
+  transform: rotate(270deg);
+}
+.circle_2 {
+  width: 20%;
+  height: 20%;
+  border-radius: 200px 200px 0 0; 
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  bottom: 0;
+  right: -6%;
+  top: 35%;
+  transform: rotate(270deg);
+} 
+
+.circle_3 {
+  width: 30%;
+  height: 30%;
+  border-radius: 300px 300px 0 0;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  bottom: 0;
+  right: -8%;
+  top: 30%;
+  transform: rotate(270deg);
+}
+
+.circle_4 {
+  width: 45%;
+  height: 45%;
+  border-radius: 450px 450px 0 0;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  bottom: 0;
+  right: -12%;
+  top: 21%;
+  transform: rotate(270deg);
+}
+
+.circle_5 {
+  width: 60%;
+  height: 60%;
+  border-radius: 600px 600px 0 0;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  bottom: 0;
+  right: -16%;
+  top: 11%;
+  transform: rotate(270deg);
+}
+@keyframes goldenFade {
+  0% {
+    border-color: var(--golden-color);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.circle_1,
+.circle_2,
+.circle_3,
+.circle_4,
+.circle_5 {
+  animation: goldenFade 5s ease-in-out forwards,
+      fadeIn 5s ease-in-out forwards;
+
+}
+.animate {
+  animation:
+    goldenFade 5s ease-in-out forwards,
+    fadeIn 5s ease-in-out forwards;
+}

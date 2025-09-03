@@ -1,0 +1,14 @@
+.menu-bar-button {
+    border:none;
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+.menu-bar-icon,.cross-icon {
+    width: 2rem;
+    height: 2rem;
+    color:var(--primary-color);
+    background-color: transparent;
+    cursor: pointer;
+    border:none
+}

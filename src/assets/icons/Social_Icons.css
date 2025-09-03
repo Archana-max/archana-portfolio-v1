@@ -1,0 +1,21 @@
+.social_icons svg {
+  color: var(--para-text-color);
+  width: 1.2rem;
+  height: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-width: 0;
+  background-color: transparent;
+  padding-inline: 0;
+}
+.social_icons {
+  color: var(--para-text-color);
+  background-color: transparent;
+  box-shadow: none;
+}
+button.social_icons {
+  all: unset;
+  cursor: pointer;
+  border: none;
+  margin-top: 1.5rem;
+}

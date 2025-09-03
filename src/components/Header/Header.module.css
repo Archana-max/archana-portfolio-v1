@@ -1,0 +1,122 @@
+/* Base styles for web header */
+.web_header {
+  height:8vh;
+  position:sticky;
+  top: 0;
+  left:0;
+  right:0;
+}
+.nav_container_web,
+.nav_container_mobile {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-top: none;
+  position:sticky;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 10 !important;
+  background-color: var(--background-color);
+
+}
+.nav_container_mobile {
+  height: 8vh;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  justify-content: space-between;
+  z-index: 100 !important;
+}
+.nav_links {
+  display: flex;
+  flex: 1;
+  font-family: var(--font-1);
+  font-weight: 400;
+  cursor: pointer;
+  align-items: center;
+  height: 8vh;
+  border-right: 1px solid var(--color-border);
+  padding-left: 1rem;
+  transition: background-color 0.3s ease-in-out 0.1s;
+}
+
+.nav_links:last-child {
+  border-right: none;
+}
+
+.nav_links:active {
+  background-color: var(--nav-hover-color);
+  color: var(--golden-color) !important;
+}
+
+.nav_links a,
+.mobile_nav_link a {
+  color: var(--primary-color);
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.35rem;
+  text-decoration: none;
+}
+
+.nav_links a:hover {
+  color: var(--golden-color);
+}
+
+.nav_links a:active {
+  background-color: var(--nav-hover-color);
+  color: var(--golden-color);
+}
+
+.nav_container_mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.active {
+  color: #fff;
+  background-color: var(--nav-hover-color);
+}
+.mobile_menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+.mobile_menu a,
+.menu_overlay a {
+  color: var(--primary-color);
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* mobile overlay */
+.menu_overlay {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1;
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+  .nav_container_web,
+  .menu-toggle,
+  .web_header,
+  .menu-overlay {
+    display: none;
+  }
+}
+/* For tablet devices */
+@media (min-width: 768px) {
+  .nav_container_mobile,
+  .mobile_menu {
+    display: none;
+  }
+}
