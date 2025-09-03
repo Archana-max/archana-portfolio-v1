@@ -36,3 +36,28 @@
   font-weight: 300;
   font-family: var(--font-mono);
 }
+.icons {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .get_in_touch {
+        font-size: 2rem;
+    }
+    .icons {
+        display: block;
+        margin: 8rem 0rem 2rem 0rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .divider {
+        display: none;
+    }
+    .icons {
+        display: block;
+        margin: 8rem 0rem 2rem 0rem;
+    }
+
+}

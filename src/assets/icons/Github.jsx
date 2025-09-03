@@ -2,7 +2,7 @@ import React from "react";
 import "./Social_Icons.css";
 
 const GitHub = () => (
-  <button className="social_icons">
+  <button className="social_icons" onClick={() => window.open("https://github.com/Archana-max", "_blank")}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"

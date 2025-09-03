@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./About.module.css";
 import Reveal from "../../hooks/Reveal";
+import profileImage from "../../assets/images/profilepic.jpeg";
 
 const skillSet = [
   "Javascript",
@@ -56,8 +57,8 @@ const About = () => {
             </ul>
           </section>
           {/* Image section */}
-          <section className={Styles.about_image}>
-            <div></div>
+          <section className={Styles.about_image}>              <img src={profileImage} alt="Archana" />
+
           </section>
         </div>
       </Reveal>

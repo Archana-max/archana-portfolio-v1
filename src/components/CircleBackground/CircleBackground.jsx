@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Styles from "./CircleBackground.module.css";
-import Reveal from "../../hooks/Reveal";
 const CircleBackground = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const circlesRef = useRef([]);
@@ -33,7 +32,6 @@ const CircleBackground = () => {
   }
 
   return (
-    <Reveal direction="right" delay={1.5}>
       <div className={Styles.circle_background}>
         {[1, 2, 3, 4, 5].map((i, index) => (
           <div
@@ -43,7 +41,6 @@ const CircleBackground = () => {
           />
         ))}
       </div>
-    </Reveal>
   );
 };
 
