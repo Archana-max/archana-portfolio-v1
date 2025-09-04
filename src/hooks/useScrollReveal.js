@@ -2,7 +2,10 @@
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
-const useScrollReveal = (selector, options={origin:'bottom',distance:'20px',delay:200}) => {
+const useScrollReveal = (
+  selector,
+  options = { origin: 'bottom', distance: '20px', delay: 200 }
+) => {
   useEffect(() => {
     const defaultOptions = {
       duration: 800,
@@ -10,7 +13,7 @@ const useScrollReveal = (selector, options={origin:'bottom',distance:'20px',dela
       reset: false,
       viewFactor: 0.2,
       mobile: true,
-          opacity: 0,
+      opacity: 0,
     };
 
     ScrollReveal().reveal(selector, { ...defaultOptions, ...options });

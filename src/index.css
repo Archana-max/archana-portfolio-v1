@@ -11,9 +11,9 @@
   --nav-hover-color: #2c2c2d;
   --color-border: rgba(255, 255, 255, 0.05);
   /* font families */
-  --font-1: "Public Sans", sans-serif;
-  --font-2: "DM Serif Display", serif;
-  --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+  --font-1: 'Public Sans', sans-serif;
+  --font-2: 'DM Serif Display', serif;
+  --font-mono: Consolas, 'Andale Mono', Courier, 'Courier New', monospace;
   /* Breakpoints */
   --mobile-minwidth: 576px;
   --mobile-maxwidth: 767.98px;
@@ -68,7 +68,7 @@ h1 {
 }
 
 h1::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 300px;
   height: 0.7px;

@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import Styles from "./CircleBackground.module.css";
+import React, { useState, useEffect, useRef } from 'react';
+import Styles from './CircleBackground.module.css';
 const CircleBackground = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const circlesRef = useRef([]);
@@ -9,7 +9,7 @@ const CircleBackground = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     // Trigger animation on page load by forcing reflow
     circlesRef.current.forEach((el) => {
@@ -22,7 +22,7 @@ const CircleBackground = () => {
 
     // Cleanup on unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -32,15 +32,15 @@ const CircleBackground = () => {
   }
 
   return (
-      <div className={Styles.circle_background}>
-        {[1, 2, 3, 4, 5].map((i, index) => (
-          <div
-            key={i}
-            ref={(el) => (circlesRef.current[index] = el)}
-            className={`${Styles[`circle_${i}`]}`}
-          />
-        ))}
-      </div>
+    <div className={Styles.circle_background}>
+      {[1, 2, 3, 4, 5].map((i, index) => (
+        <div
+          key={i}
+          ref={(el) => (circlesRef.current[index] = el)}
+          className={`${Styles[`circle_${i}`]}`}
+        />
+      ))}
+    </div>
   );
 };
 

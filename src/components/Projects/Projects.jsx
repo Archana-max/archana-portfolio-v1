@@ -1,34 +1,34 @@
-import React from "react";
-import Styles from "./Projects.module.css";
-import Reveal from "../../hooks/Reveal";
-import bidnbizImage from "../../assets/images/bidnbiz.png";
-import potfolioImage from "../../assets/images/portfolio.png";
-import geminiImage from "../../assets/images/gemini.png";
+import React from 'react';
+import Styles from './Projects.module.css';
+import Reveal from '../../hooks/Reveal';
+import bidnbizImage from '../../assets/images/bidnbiz.png';
+import potfolioImage from '../../assets/images/portfolio.png';
+import geminiImage from '../../assets/images/gemini.png';
 
 const ProjectsDetails = [
   {
-    title: "MEAN Stack E-commerce Application",
+    title: 'MEAN Stack E-commerce Application',
     description:
-      "A full-stack web application built with Angular, Node.js, Express, and MongoDB that enables users to browse products, authenticate securely, and make purchases.",
+      'A full-stack web application built with Angular, Node.js, Express, and MongoDB that enables users to browse products, authenticate securely, and make purchases.',
     imageSrc: bidnbizImage,
-    techStack: ["Angular", "Node.js", "MonogoDB", "Sass", "Express"],
-    projectLink: "https://bidnbiz.com/",
+    techStack: ['Angular', 'Node.js', 'MonogoDB', 'Sass', 'Express'],
+    projectLink: 'https://bidnbiz.com/',
   },
   {
-    title: "Gemini",
+    title: 'Gemini',
     description:
-      "Built a personalized Generative AI app powered by Google Gemini API, featuring a React.js frontend and a Node.js backend for seamless user interaction.",
+      'Built a personalized Generative AI app powered by Google Gemini API, featuring a React.js frontend and a Node.js backend for seamless user interaction.',
     imageSrc: geminiImage,
-    techStack: ["React", "CSS", "Node.js"],
-    projectLink: "https://gemini-api-orcin.vercel.app/",
+    techStack: ['React', 'CSS', 'Node.js'],
+    projectLink: 'https://gemini-api-orcin.vercel.app/',
   },
   {
-    title: "Portfolio Website",
+    title: 'Portfolio Website',
     description:
-      "A personal portfolio website showcasing projects and skills, built with React and enhanced with Framer Motion for smooth animations.",
-    techStack: ["React", "CSS", "Framer Motion"],
+      'A personal portfolio website showcasing projects and skills, built with React and enhanced with Framer Motion for smooth animations.',
+    techStack: ['React', 'CSS', 'Framer Motion'],
     imageSrc: potfolioImage,
-    projectLink: "https://gemini-api-orcin.vercel.app/",
+    projectLink: 'https://gemini-api-orcin.vercel.app/',
   },
   // Add more projects as needed
 ];
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
     <div className={Styles.project_card_container}>
       <div className={Styles.image_container}>
         <a href={project.projectLink} target="_blank">
-          {" "}
+          {' '}
           <img src={project.imageSrc} className={Styles.project_image} />
         </a>
       </div>

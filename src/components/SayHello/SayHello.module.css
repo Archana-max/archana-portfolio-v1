@@ -1,17 +1,14 @@
 .say_hello_section {
   margin-top: 12rem;
   margin-bottom: 2rem;
-  margin-left: var(--margin-left);
-  margin-right: var(--margin-right);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .say_hello_section p {
-  margin-bottom: 0rem;
-    text-align: center;
-
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .get_in_touch {
@@ -27,7 +24,7 @@
 
 .divider {
   width: 80vw;
-  margin: 8rem 0rem 2rem 0rem;
+  margin: 8rem 0 2rem 0;
   border: 0.7px solid var(--color-border);
 }
 .copyright {
@@ -37,27 +34,25 @@
   font-family: var(--font-mono);
 }
 .icons {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 500px) {
-    .get_in_touch {
-        font-size: 2rem;
-    }
-    .icons {
-        display: block;
-        margin: 8rem 0rem 2rem 0rem;
-    }
-
+  .get_in_touch {
+    font-size: 2rem;
+  }
+  .icons {
+    display: block;
+    margin: 8rem 0 2rem 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .divider {
-        display: none;
-    }
-    .icons {
-        display: block;
-        margin: 8rem 0rem 2rem 0rem;
-    }
-
+  .divider {
+    display: none;
+  }
+  .icons {
+    display: block;
+    margin: 8rem 0 2rem 0;
+  }
 }

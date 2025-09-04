@@ -1,8 +1,13 @@
-import React from "react";
+import React from 'react';
 
 const LinkedIn = () => {
   return (
-    <button className="social_icons" onClick={() => window.open("https://www.linkedin.com/in/archana-moorthy/", "_blank")}>
+    <button
+      className="social_icons"
+      onClick={() =>
+        window.open('https://www.linkedin.com/in/archana-moorthy/', '_blank')
+      }
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

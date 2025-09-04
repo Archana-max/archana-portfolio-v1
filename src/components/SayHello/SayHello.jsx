@@ -1,9 +1,9 @@
-import React from "react";
-import Styles from "./SayHello.module.css";
-import Reveal from "../../hooks/Reveal";
-import EmailIcon from "../../assets/icons/Email.jsx";
-import GitHub from "../../assets/icons/Github.jsx";
-import LinkedIn from "../../assets/icons/LinkedIn.jsx";
+import React from 'react';
+import Styles from './SayHello.module.css';
+import Reveal from '../../hooks/Reveal';
+import EmailIcon from '../../assets/icons/Email.jsx';
+import GitHub from '../../assets/icons/Github.jsx';
+import LinkedIn from '../../assets/icons/LinkedIn.jsx';
 
 const SayHello = () => {
   return (
@@ -20,11 +20,11 @@ const SayHello = () => {
           <a href="mailto:archanamoorthy32@gmail.com">Say Hello</a>
         </button>
         <hr className={Styles.divider} />
-          <div className={Styles.icons}>
-              <EmailIcon />
-              <LinkedIn />
-              <GitHub/>
-          </div>
+        <div className={Styles.icons}>
+          <EmailIcon />
+          <LinkedIn />
+          <GitHub />
+        </div>
         <div className={Styles.copyright}>Design and built by Archana</div>
       </div>
     </Reveal>

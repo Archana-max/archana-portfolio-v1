@@ -1,20 +1,20 @@
-import React from "react";
-import "./Social_Icons.css";
+import React from 'react';
+import './Social_Icons.css';
 
 const buildMailto = ({ email, subject, body }) => {
   const params = [];
   if (subject) params.push(`subject=${encodeURIComponent(subject)}`);
   if (body) params.push(`body=${encodeURIComponent(body)}`);
-  const query = params.length ? `?${params.join("&")}` : "";
+  const query = params.length ? `?${params.join('&')}` : '';
   return `mailto:${email}${query}`;
 };
 
 const EmailIcon = ({
-  email = "archanamoorthy32@gmail.com",
+  email = 'archanamoorthy32@gmail.com',
   subject,
   body,
   onClick,
-  ariaLabel = "Send email",
+  ariaLabel = 'Send email',
   title,
 }) => {
   const handleClick = (e) => {
@@ -27,7 +27,7 @@ const EmailIcon = ({
     window.location.href = href;
   };
 
-  const computedTitle = title || (email ? `Email ${email}` : "Email");
+  const computedTitle = title || (email ? `Email ${email}` : 'Email');
 
   return (
     <button

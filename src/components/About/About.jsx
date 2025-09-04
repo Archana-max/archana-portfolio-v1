@@ -1,21 +1,21 @@
-import React from "react";
-import Styles from "./About.module.css";
-import Reveal from "../../hooks/Reveal";
-import profileImage from "../../assets/images/profilepic.jpeg";
+import React from 'react';
+import Styles from './About.module.css';
+import Reveal from '../../hooks/Reveal';
+import profileImage from '../../assets/images/profilepic.jpeg';
 
 const skillSet = [
-  "Javascript",
-  "Typescript",
-  "React",
-  "NextJs",
-  "Angular",
-  "Node.js",
-  "MonogoDB",
-  "HTML",
-  "CSS",
-  "Sass",
-  "Material UI",
-  "Ant Design",
+  'Javascript',
+  'Typescript',
+  'React',
+  'NextJs',
+  'Angular',
+  'Node.js',
+  'MonogoDB',
+  'HTML',
+  'CSS',
+  'Sass',
+  'Material UI',
+  'Ant Design',
 ];
 const About = () => {
   return (
@@ -36,10 +36,20 @@ const About = () => {
             </p>
             <p>
               Fast forward to today — I’ve had the opportunity to work with
-              companies like{" "}
-              <a href="https://www.homedepot.com/" className={Styles.about_link} target={"_blank"}>The Home Depot</a>, a retail
-              giant, and{" "}
-              <a href="https://www.linkedin.com/company/villageit18/posts/?feedView=all" className={Styles.about_link} target={"_blank"}>
+              companies like{' '}
+              <a
+                href="https://www.homedepot.com/"
+                className={Styles.about_link}
+                target={'_blank'}
+              >
+                The Home Depot
+              </a>
+              , a retail giant, and{' '}
+              <a
+                href="https://www.linkedin.com/company/villageit18/posts/?feedView=all"
+                className={Styles.about_link}
+                target={'_blank'}
+              >
                 Village IT Services
               </a>
               . These days, I’m focused on crafting accessible and maintainable
@@ -57,8 +67,9 @@ const About = () => {
             </ul>
           </section>
           {/* Image section */}
-          <section className={Styles.about_image}>              <img src={profileImage} alt="Archana" />
-
+          <section className={Styles.about_image}>
+            {' '}
+            <img src={profileImage} alt="Archana" />
           </section>
         </div>
       </Reveal>

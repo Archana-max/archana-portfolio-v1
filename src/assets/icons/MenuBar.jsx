@@ -1,7 +1,7 @@
-import React from "react";
-import "./MenuBar.css";
+import React from 'react';
+import './MenuBar.css';
 
-export const MenuBar = ({ menuOpen,menuIconHandler }) => {
+export const MenuBar = ({ menuOpen, menuIconHandler }) => {
   return (
     <button onClick={menuIconHandler} className="menu-bar-button">
       {menuOpen ? (

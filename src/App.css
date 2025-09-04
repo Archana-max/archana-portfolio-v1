@@ -1,12 +1,11 @@
 @media (min-width: 1200px) {
-
-    #about,
-    #experience,
-    #projects,
-    #sayHello {
-        margin-left: var(--margin-left);
-        margin-right: var(--margin-right);
-    }
+  #about,
+  #experience,
+  #projects,
+  #sayHello {
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+  }
 }
 
 @media (max-width: 550px) {

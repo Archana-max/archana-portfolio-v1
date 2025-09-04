@@ -1,15 +1,20 @@
 // components/Reveal.js
-import { motion,useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
-const Reveal = ({ children, direction = "up", delay = 0.2, duration = 0.6 }) => {
+const Reveal = ({
+  children,
+  direction = 'up',
+  delay = 0.2,
+  duration = 0.6,
+}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible');
     }
   }, [inView, controls]);
 
@@ -17,8 +22,8 @@ const Reveal = ({ children, direction = "up", delay = 0.2, duration = 0.6 }) => 
   const variants = {
     hidden: {
       opacity: 0,
-      y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
-      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+      y: direction === 'up' ? 40 : direction === 'down' ? -40 : 0,
+      x: direction === 'left' ? 40 : direction === 'right' ? -40 : 0,
     },
     visible: {
       opacity: 1,
@@ -27,13 +32,18 @@ const Reveal = ({ children, direction = "up", delay = 0.2, duration = 0.6 }) => 
       transition: {
         duration,
         delay,
-        ease: "easeOut",
+        ease: 'easeOut',
       },
     },
   };
 
   return (
-    <motion.div ref={ref} initial="hidden" animate={controls} variants={variants}>
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+    >
       {children}
     </motion.div>
   );

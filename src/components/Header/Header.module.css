@@ -1,23 +1,22 @@
 /* Base styles for web header */
 .web_header {
-  height:8vh;
-  position:sticky;
+  height: 8vh;
+  position: sticky;
   top: 0;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 }
 .nav_container_web,
 .nav_container_mobile {
   display: flex;
   border: 1px solid var(--color-border);
   border-top: none;
-  position:sticky;
+  position: sticky;
   top: 0;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   z-index: 10 !important;
   background-color: var(--background-color);
-
 }
 .nav_container_mobile {
   height: 8vh;
