@@ -10,7 +10,7 @@ const skillSet = [
   'NextJs',
   'Angular',
   'Node.js',
-  'MonogoDB',
+  'MongoDB',
   'HTML',
   'CSS',
   'Sass',
