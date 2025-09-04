@@ -29,7 +29,7 @@ const Header = ({ onNavClick, refs, active }) => {
 
       <ul className={Styles.nav_container_mobile}>
         <li className={Styles.mobile_nav_link}>
-          <a href="https://my-portfolio-pqf9.vercel.app/">Archana.</a>
+          <a href="https://my-portfolio-archana-moorthy.vercel.app/">Archana.</a>
         </li>
         <li>
           <MenuBar
@@ -83,7 +83,7 @@ const Header = ({ onNavClick, refs, active }) => {
           <ul className={Styles.nav_container_web}>
             <li className={Styles.nav_links}>
               <a
-                href="https://my-portfolio-pqf9.vercel.app/"
+                href="https://my-portfolio-archana-moorthy.vercel.app/"
                 className={active === '' ? Styles.active : ''}
               >
                 Archana.
